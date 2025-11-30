@@ -59,11 +59,13 @@ const Navbar = () => {
             Women Safety
           </Link>
 
-          <Link to="/aboutwebsite" style={{ color: "white", textDecoration: "none" }}>
+          {/* ✅ FIXED ROUTE */}
+          <Link to="/about" style={{ color: "white", textDecoration: "none" }}>
             About
           </Link>
 
-          <Link to="/contactinfo" style={{ color: "white", textDecoration: "none" }}>
+          {/* ✅ FIXED ROUTE */}
+          <Link to="/contact" style={{ color: "white", textDecoration: "none" }}>
             Contact
           </Link>
 

@@ -3,40 +3,40 @@ import { Link } from "react-router-dom";
 
 const TourGuidePage = () => {
   return (
-    <div className="page">
-      <h1>Tour Guide Assistance</h1>
-
-      <p style={{ fontSize: "17px", marginTop: "10px" }}>
+    <div style={{ textAlign: "center", marginTop: "60px" }}>
+      <h1 style={{ fontSize: "32px", fontWeight: "bold" }}>Tour Guide Assistance</h1>
+      <p style={{ fontSize: "18px", marginTop: "10px" }}>
         Explore available tour guides or apply to become one.
       </p>
 
       <div
         style={{
-          marginTop: "30px",
-          background: "#f8f8f8",
-          padding: "20px",
+          width: "60%",
+          margin: "40px auto",
+          background: "#f5f5f5",
+          padding: "25px",
           borderRadius: "12px",
-          maxWidth: "600px",
-          margin: "30px auto",
-          boxShadow: "0 3px 10px rgba(0,0,0,0.15)"
+          boxShadow: "0 3px 8px rgba(0,0,0,0.1)",
         }}
       >
         <h3>Available Tour Guides</h3>
         <p>(Admin will add guides here)</p>
       </div>
 
-      <Link
-        to="/applytourguide"
-        style={{
-          background: "#4A90E2",
-          padding: "12px 20px",
-          color: "white",
-          borderRadius: "10px",
-          marginTop: "20px",
-          display: "inline-block"
-        }}
-      >
-        Apply as Tour Guide
+      <Link to="/apply-tour-guide">
+        <button
+          style={{
+            padding: "12px 30px",
+            background: "#2576F6",
+            color: "white",
+            fontSize: "17px",
+            borderRadius: "8px",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
+          Apply as Tour Guide
+        </button>
       </Link>
     </div>
   );
