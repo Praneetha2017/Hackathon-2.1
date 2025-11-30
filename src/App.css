@@ -1,0 +1,15 @@
+/* src/App.css */
+.App-container {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+.App-background {
+    background-color: var(--color-background); 
+    flex-grow: 1; 
+    padding-bottom: 30px; 
+}
+.App-content {
+  width: 100%;
+  margin: 0 auto;
+}
